@@ -50,10 +50,12 @@ public class ServerTest {
         boolean rightCurrency = server.canServeGuest(guest);
         assertThat(rightCurrency).isEqualTo(true);
     }
-
     // EXTENSIONS
 
     // TODO: test that guest can only get served if server can make favourite drink
+
+
+
     //  (give server a list of drinks (strings) it can make)
 
 }
