@@ -4,6 +4,7 @@ public class Server {
         boolean hasEnoughMoney = false;
         boolean isSober = false;
         boolean canEnterPub = false;
+        boolean correctCurrency = false;
 
         if (guest.getAge() >= 18) {
             ofAge = true;
@@ -21,7 +22,8 @@ public class Server {
             canEnterPub = true;
         }
 
-        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true) {
+
+        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true && correctCurrency == true) {
             return true;
         }
 

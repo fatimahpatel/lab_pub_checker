@@ -45,6 +45,8 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if guest can pay in local currency (add £ char as currency)
 
+
+
     // EXTENSIONS
 
     // TODO: test that guest can only get served if server can make favourite drink
