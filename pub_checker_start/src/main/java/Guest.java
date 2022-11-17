@@ -4,13 +4,8 @@ public class Guest {
     private int age;
 
 
-    public Guest(String name, int age,){
+    public Guest(String name, int age,) {
         this.name = name;
         this.age = age;
-        boolean overEighteen = false;
-
-        //if (age >= 18){
-
-        //}
     }
 }
