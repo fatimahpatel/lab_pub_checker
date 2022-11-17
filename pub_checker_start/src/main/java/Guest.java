@@ -7,13 +7,16 @@ public class Guest {
 
     private String pubStatus;
 
+    private char currency;
 
-    public Guest(String name, int age, int wallet, int sobriety, String pubStatus) {
+
+    public Guest(String name, int age, int wallet, int sobriety, String pubStatus, char currency) {
         this.name = name;
         this.age = age;
         this.wallet = wallet;
         this.sobriety = sobriety;
         this.pubStatus = pubStatus;
+        this.currency = currency;
     }
 
     //getters and setters
@@ -31,5 +34,9 @@ public class Guest {
     }
     public String getPubStatus(){
         return this.pubStatus;
+    }
+
+    public char getCurrency(){
+        return this.currency;
     }
 }
