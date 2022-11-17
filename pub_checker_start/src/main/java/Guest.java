@@ -5,7 +5,7 @@ public class Guest {
     private int wallet;
 
 
-    public Guest(String name, int age) {
+    public Guest(String name, int age, int wallet) {
         this.name = name;
         this.age = age;
         this.wallet = wallet;

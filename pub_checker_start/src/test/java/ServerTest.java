@@ -12,7 +12,7 @@ public class ServerTest {
     @BeforeEach
     public void setUp(){
         server = new Server();
-        guest = new Guest("Bob", 27);
+        guest = new Guest("Bob", 27, 10);
     }
 
     // TODO: test that guest can only get served if over 18
@@ -24,9 +24,9 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
     //@Test
-    //public void serveIfGuestHasEnoughMoney(){
-        //boolean enoughMoney = server.canServeGuest(guest);
-       // assertThat(enoughMoney).isEqualTo(true);
+    public void serveIfGuestHasEnoughMoney(){
+        boolean enoughMoney = server.canServeGuest(guest);
+        assertThat(enoughMoney).isEqualTo(true);
 
     }
 
