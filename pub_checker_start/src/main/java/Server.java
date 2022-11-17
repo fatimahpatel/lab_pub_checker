@@ -3,23 +3,13 @@ import java.util.ArrayList;
 public class Server {
     public boolean canServeGuest(Guest guest) {
 
-        ArrayList<String> drinks = new ArrayList<>();
-        drinks.add("Pina Colada");
-        drinks.add("Mojito");
-        drinks.add("Water");
-
-        for (String drink:drinks){
-            if drink == guest.getFavDrink(){
-
-            }
-        }
-
 
         boolean ofAge = false;
         boolean hasEnoughMoney = false;
         boolean isSober = false;
         boolean canEnterPub = false;
         boolean correctCurrency = false;
+        boolean serverCanMakeDrink = false;
 
         if (guest.getAge() >= 18) {
             ofAge = true;
@@ -42,7 +32,19 @@ public class Server {
         }
 
 
-        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true && correctCurrency == true) {
+        ArrayList<String> drinks = new ArrayList<>();
+        drinks.add("Pina Colada");
+        drinks.add("Mojito");
+        drinks.add("Water");
+
+        for (String drink:drinks){
+            if (drink == guest.getFavDrink()){
+                serverCanMakeDrink = true;
+            }
+        }
+
+
+        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true && correctCurrency == true && serverCanMakeDrink == true) {
             return true;
         }
 
