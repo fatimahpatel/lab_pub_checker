@@ -4,7 +4,7 @@ public class Guest {
     private int age;
     private boolean overEighteen;
 
-    public Guest(String name){
+    public Guest(String name, int age, boolean overEighteen){
         this.name = name;
         this.age = age;
         this.overEighteen = overEighteen;
