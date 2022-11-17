@@ -3,8 +3,12 @@ public class Server {
         boolean ofAge = false;
         boolean hasEnoughMoney = false;
 
-        if (guest.getAge() <= 18) {
+        if (guest.getAge() >= 18) {
             ofAge = true;
+        }
+
+        if (guest.getWallet() >= 5){
+            hasEnoughMoney = true;
         }
 
         if (ofAge = true && hasEnoughMoney == true) {
