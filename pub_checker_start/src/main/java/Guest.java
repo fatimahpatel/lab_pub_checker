@@ -13,7 +13,7 @@ public class Guest {
     public String getName(){
         return this.name;
     }
-    public int getAge(){
+    public Guest getAge(){
         return this.age;
     }
 }

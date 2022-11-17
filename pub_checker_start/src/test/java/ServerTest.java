@@ -16,7 +16,7 @@ public class ServerTest {
     public void serveIfOver18(){
         Guest guest = new Guest ("Bob", 30);
         server.canServeGuest(guest);
-        boolean overEighteen = server.canServeGuest(guest) ;
+        boolean overEighteen = server.canServeGuest(guest.getAge()) ;
         assertThat(overEighteen).isEqualTo(true);
     }
 
