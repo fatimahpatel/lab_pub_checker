@@ -12,7 +12,7 @@ public class ServerTest {
     @BeforeEach
     public void setUp(){
         server = new Server();
-        guest = new Guest("Bob", 27)
+        guest = new Guest("Bob", 27);
     }
 
     // TODO: test that guest can only get served if over 18
@@ -24,7 +24,7 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
     public void serveIfGuestHasEnoughMoney(){
-        Guest gues
+
     }
 
     // TODO: test that guest can only get served if sober enough (set sobriety level on guest)
