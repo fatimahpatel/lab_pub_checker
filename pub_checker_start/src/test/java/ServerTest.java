@@ -7,21 +7,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ServerTest {
 
     Server server;
+    Guest guest;
 
     @BeforeEach
     public void setUp(){
         server = new Server();
+        guest = new Guest("Bob", 27)
     }
 
     // TODO: test that guest can only get served if over 18
     @Test
     public void serveIfOver18(){
-        Guest guest = new Guest ("Bob", 30);
         boolean overEighteen = server.canServeGuest(guest) ;
         assertThat(overEighteen).isEqualTo(true);
     }
 
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
+    public void serveIfGuestHasEnoughMoney(){
+        Guest gues
+    }
 
     // TODO: test that guest can only get served if sober enough (set sobriety level on guest)
 
