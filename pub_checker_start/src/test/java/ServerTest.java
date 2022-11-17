@@ -31,6 +31,7 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if sober enough (set sobriety level on guest)
 
+
     // TODO: test that guest can only get served if guest is not banned from the pub
 
     // TODO: test that guest can only get served if guest can pay in local currency (add £ char as currency)

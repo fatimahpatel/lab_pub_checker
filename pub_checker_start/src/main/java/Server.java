@@ -1,13 +1,20 @@
 public class Server {
     public boolean canServeGuest(Guest guest) {
+        boolean ofAge = false;
+        boolean OfAge;
+        if (guest.getAge() <= 18) {
+            OfAge = true;
+        }
 
-        if (guest.getAge() >= 18 && guest.getWallet() > 5){
-                return true;
-            }
-            return false;
+
+        if (OfAge = true) {
+            return true;
+        }
+
+        return false;
 
 
-}
+    }
 
 
 }
