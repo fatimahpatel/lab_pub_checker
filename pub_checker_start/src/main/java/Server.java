@@ -1,13 +1,12 @@
 public class Server {
     public boolean canServeGuest(Guest guest) {
         boolean ofAge = false;
-        boolean OfAge;
+
         if (guest.getAge() <= 18) {
-            OfAge = true;
+            ofAge = true;
         }
 
-
-        if (OfAge = true) {
+        if (ofAge = true) {
             return true;
         }
 
