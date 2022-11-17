@@ -37,7 +37,8 @@ public class ServerTest {
         assertThat(guestIsSober).isEqualTo(true);
     }
     // TODO: test that guest can only get served if guest is not banned from the pub
-
+    @Test
+    public void
 
     // TODO: test that guest can only get served if guest can pay in local currency (add £ char as currency)
 

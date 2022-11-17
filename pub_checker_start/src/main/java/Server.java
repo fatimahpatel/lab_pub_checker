@@ -17,7 +17,7 @@ public class Server {
             isSober = true;
         }
 
-        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == false) {
+        if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true) {
             return true;
         }
 
