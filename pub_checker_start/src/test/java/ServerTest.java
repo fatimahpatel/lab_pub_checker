@@ -31,6 +31,12 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if sober enough (set sobriety level on guest)
 
+    @Test
+    public void serveIfGuestIsSober(){
+        boolean guestIsSober = server.canServeGuest(guest);
+        assertThat(guestIsSober).isEqualTo(true);
+    }
+
 
     // TODO: test that guest can only get served if guest is not banned from the pub
 
