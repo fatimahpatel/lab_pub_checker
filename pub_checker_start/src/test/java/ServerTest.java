@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class ServerTest {
 
@@ -15,8 +17,7 @@ public class ServerTest {
     @Test
     public void serveIfOver18(){
         Guest guest = new Guest ("Bob", 30);
-        server.canServeGuest(guest);
-        boolean overEighteen = server.canServeGuest(guest.getAge()) ;
+        boolean overEighteen = server.canServeGuest(guest) ;
         assertThat(overEighteen).isEqualTo(true);
     }
 

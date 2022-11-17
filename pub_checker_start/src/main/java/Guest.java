@@ -4,7 +4,7 @@ public class Guest {
     private int age;
 
 
-    public Guest(String name, int age,) {
+    public Guest(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -13,7 +13,7 @@ public class Guest {
     public String getName(){
         return this.name;
     }
-    public Guest getAge(){
+    public int getAge(){
         return this.age;
     }
 }
