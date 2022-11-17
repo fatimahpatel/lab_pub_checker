@@ -8,4 +8,12 @@ public class Guest {
         this.name = name;
         this.age = age;
     }
+
+    //getters and setters
+    public String getName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
 }
