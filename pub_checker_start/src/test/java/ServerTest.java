@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 
 public class ServerTest {
@@ -11,6 +12,13 @@ public class ServerTest {
     }
 
     // TODO: test that guest can only get served if over 18
+    @Test
+    public void serveIfOver18(){
+        Guest guest = new Guest ("Bob");
+        server.canServeGuest(guest);
+        assertThat(overEighteen).isEqualTo(true);
+    }
+
 
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
 
