@@ -2,6 +2,7 @@ public class Server {
     public boolean canServeGuest(Guest guest) {
         boolean ofAge = false;
         boolean hasEnoughMoney = false;
+        boolean isSober = false;
 
         if (guest.getAge() >= 18) {
             ofAge = true;
@@ -11,7 +12,7 @@ public class Server {
             hasEnoughMoney = true;
         }
 
-        if (ofAge = true && hasEnoughMoney == true) {
+        if (ofAge = true && hasEnoughMoney = true && isSober = true) {
             return true;
         }
 
