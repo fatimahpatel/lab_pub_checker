@@ -22,6 +22,10 @@ public class Server {
             canEnterPub = true;
         }
 
+        if (guest.getCurrency() == '£'){
+            correctCurrency = true;
+        }
+
 
         if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true && correctCurrency == true) {
             return true;
