@@ -7,9 +7,10 @@ public class Guest {
     public Guest(String name, int age,){
         this.name = name;
         this.age = age;
+        boolean overEighteen = false;
 
-        if (age >= 18){
+        //if (age >= 18){
 
-        }
+        //}
     }
 }

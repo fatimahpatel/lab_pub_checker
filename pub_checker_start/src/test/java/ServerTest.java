@@ -19,7 +19,6 @@ public class ServerTest {
         assertThat(overEighteen).isEqualTo(true);
     }
 
-
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
 
     // TODO: test that guest can only get served if sober enough (set sobriety level on guest)
