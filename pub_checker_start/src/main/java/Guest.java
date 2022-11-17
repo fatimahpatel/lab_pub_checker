@@ -8,5 +8,8 @@ public class Guest {
         this.name = name;
         this.age = age;
 
+        if (age >= 18){
+
+        }
     }
 }
