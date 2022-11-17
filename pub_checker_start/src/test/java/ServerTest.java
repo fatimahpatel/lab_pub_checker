@@ -45,6 +45,11 @@ public class ServerTest {
 
     // TODO: test that guest can only get served if guest can pay in local currency (add £ char as currency)
 
+    @Test
+    public void checkIfRightCurrency(){
+        boolean rightCurrency = server.canServeGuest(guest);
+        assertThat(rightCurrency).isEqualTo(true);
+    }
 
 
     // EXTENSIONS
