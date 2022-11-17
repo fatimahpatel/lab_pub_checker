@@ -14,7 +14,7 @@ public class ServerTest {
     // TODO: test that guest can only get served if over 18
     @Test
     public void serveIfOver18(){
-        Guest guest = new Guest ("Bob");
+        Guest guest = new Guest ("Bob", 30);
         server.canServeGuest(guest);
         assertThat(overEighteen).isEqualTo(true);
     }
