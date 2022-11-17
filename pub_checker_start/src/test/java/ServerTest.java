@@ -12,7 +12,7 @@ public class ServerTest {
     @BeforeEach
     public void setUp(){
         server = new Server();
-        guest = new Guest("Bob", 27, 10);
+        guest = new Guest("Bob", 27, 10, 70);
     }
 
     // TODO: test that guest can only get served if over 18
