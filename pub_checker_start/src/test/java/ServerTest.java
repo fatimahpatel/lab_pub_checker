@@ -53,8 +53,11 @@ public class ServerTest {
     // EXTENSIONS
 
     // TODO: test that guest can only get served if server can make favourite drink
-
-
+    @Test
+    public void checkIfServerCanMakeDrink(){
+        boolean canMakeDrink = server.canServeGuest(guest);
+        assertThat(canMakeDrink).isEqualTo(true)
+    }
 
     //  (give server a list of drinks (strings) it can make)
 
