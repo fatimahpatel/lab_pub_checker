@@ -8,6 +8,12 @@ public class Server {
         drinks.add("Mojito");
         drinks.add("Water");
 
+        for (String drink:drinks){
+            if drink == guest.getFavDrink(){
+
+            }
+        }
+
 
         boolean ofAge = false;
         boolean hasEnoughMoney = false;
