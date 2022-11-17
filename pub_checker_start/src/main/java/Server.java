@@ -1,5 +1,14 @@
+import java.util.ArrayList;
+
 public class Server {
     public boolean canServeGuest(Guest guest) {
+
+        ArrayList<String> drinks = new ArrayList<>();
+        drinks.add("Pina Colada");
+        drinks.add("Mojito");
+        drinks.add("Water");
+
+
         boolean ofAge = false;
         boolean hasEnoughMoney = false;
         boolean isSober = false;
@@ -35,6 +44,7 @@ public class Server {
 
 
     }
+
 
 
 }
