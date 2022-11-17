@@ -23,7 +23,10 @@ public class ServerTest {
     }
 
     // TODO: test that guest can only get served if has enough money to buy a drink (every drink is £5)
+    @Test
     public void serveIfGuestHasEnoughMoney(){
+        boolean enoughMoney = server.canServeGuest(guest);
+        assertThat(enoughMoney).isEqualTo(true);
 
     }
 
