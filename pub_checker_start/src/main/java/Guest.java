@@ -5,7 +5,7 @@ public class Guest {
     private int wallet;
     private int sobriety;
 
-    private String pubStatus:
+    private String pubStatus;
 
 
     public Guest(String name, int age, int wallet, int sobriety, String pubStatus) {

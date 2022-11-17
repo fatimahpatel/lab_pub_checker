@@ -17,6 +17,10 @@ public class Server {
             isSober = true;
         }
 
+        if (guest.getPubStatus() == "Not Banned"){
+            canEnterPub = true;
+        }
+
         if (ofAge == true && hasEnoughMoney == true && isSober == true && canEnterPub == true) {
             return true;
         }
