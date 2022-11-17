@@ -56,7 +56,7 @@ public class ServerTest {
     @Test
     public void checkIfServerCanMakeDrink(){
         boolean canMakeDrink = server.canServeGuest(guest);
-        assertThat(canMakeDrink).isEqualTo(true)
+        assertThat(canMakeDrink).isEqualTo(true);
     }
 
     //  (give server a list of drinks (strings) it can make)
